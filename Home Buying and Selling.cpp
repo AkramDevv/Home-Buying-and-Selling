@@ -294,6 +294,15 @@ int main() {
 
 	std::cout << "\nUser's budget: ";
 	std::cout << userBudget;
+	
+	
+	for (int i = 0;i < designRow;i++) {
+		for (int j = 0;j < designCol;j++) {
+			delete[] apartmentDesigns[i][j];
+		}
+		delete[] apartmentDesigns[i];
+	}
+	delete[] apartmentDesigns;
 
 
 
